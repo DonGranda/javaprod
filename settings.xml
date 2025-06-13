@@ -1,0 +1,35 @@
+<settings>
+
+<servers>
+  <server>
+    <id>javaapp-javaapp-cicd</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+
+<profiles>
+  <profile>
+    <id>javaapp-javaapp-cicd</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>javaapp-javaapp-cicd</id>
+        <url>https://javaapp-600627332632.d.codeartifact.eu-north-1.amazonaws.com/maven/javaapp-cicd/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+
+<mirrors>
+  <mirror>
+    <id>javaapp-javaapp-cicd</id>
+    <name>javaapp-javaapp-cicd</name>
+    <url>https://javaapp-600627332632.d.codeartifact.eu-north-1.amazonaws.com/maven/javaapp-cicd/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+
+</settings>
