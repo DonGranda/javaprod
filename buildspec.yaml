@@ -1,5 +1,4 @@
 version: 0.2
-
 phases:
   install:
     runtime-versions:
@@ -8,7 +7,6 @@ phases:
     commands:
       - echo Initializing environment
       - export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain javaapp --domain-owner 600627332632 --region eu-north-1 --query authorizationToken --output text`
-
   build:
     commands:
       - echo Build started on `date`
@@ -20,4 +18,4 @@ phases:
 artifacts:
   files:
     - target/web-project.war
-  discard-paths: no
+  discard-paths: false
