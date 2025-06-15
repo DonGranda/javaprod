@@ -18,6 +18,6 @@ phases:
 artifacts:
   files:
     - target/*.war
-    - appsepc.yml
+    - appspec.yml
     - scripts/**/*
   discard-paths: false
