@@ -17,7 +17,7 @@ phases:
       - mvn -s settings.xml package
 artifacts:
   files:
-    - target/*.war
+    - target/java-web-project.war
     - appspec.yml
     - scripts/**/*
   discard-paths: false
