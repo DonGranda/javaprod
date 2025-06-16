@@ -16,7 +16,7 @@
     </div>
 
     <div class="container">
-        <h1 class="welcome-text">Welcome Leslie Kofi!</h1>
+        <h1 class="welcome-text">Welcome LeslieK!</h1>
         <p class="subtitle">Step into something amazing</p>
         <button class="pulse-button" onclick="handleClick()">Get Started</button>
     </div>
